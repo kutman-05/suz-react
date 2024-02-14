@@ -1,0 +1,53 @@
+.menu h1 {
+  text-align: center;
+  color: #f8f806;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  margin-top: 40px;
+}
+.menuBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+  padding: 50px;
+}
+
+.menuBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 337px;
+  height: 276px;
+  border-radius: 15px;
+  background: #d9d9d9;
+}
+.menuBlock img {
+  width: 250px;
+  height: 167px;
+  margin-top: 14px;
+  border-radius: 20px;
+}
+.menuBlock h2 {
+  display: flex;
+  margin-left: 10px;
+}
+.menuBlock h3 {
+  display: flex;
+  margin-left: 10px;
+}
+
+.menuBlock button.knopka1 {
+  font-size: 20px;
+  margin-left: 160px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+.menuBlock button.knopka {
+  font-size: 20px;
+  margin-left: 3px;
+  border-radius: 5px;
+  background-color: yellow;
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.scss";
+import Header from "./components/header";
+import MainRoutes from "./MainRoutes";
+// import Hero from "./components/Hero/hero";
 
 function App() {
+  const [fuson, SetFuson] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        background: fuson
+          ? "url(https://st2.depositphotos.com/2627021/8523/i/450/depositphotos_85236464-stock-photo-romantic-moon-in-starry-night.jpg) no-repeat center/cover"
+          : "url(https://woodstoneseniorliving.com/wp-content/uploads/2021/07/sun-blog.png) no-repeat center/cover",
+      }}
+      className="App"
+    >
+      <Header fuson={fuson} SetFuson={SetFuson} />
+
+      <MainRoutes />
     </div>
   );
 }
